@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000010000000000000001 /* todoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000001 /* todoApp.swift */; };
+		B10000010000000000000002 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000002 /* Project.swift */; };
+		B10000010000000000000003 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000003 /* TaskItem.swift */; };
+		B10000010000000000000004 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000004 /* Scheduler.swift */; };
+		B10000010000000000000005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000005 /* ContentView.swift */; };
+		B10000010000000000000006 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000006 /* SidebarView.swift */; };
+		B10000010000000000000007 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000007 /* TaskListView.swift */; };
+		B10000010000000000000008 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000008 /* TaskRowView.swift */; };
+		B10000010000000000000009 /* GanttChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000009 /* GanttChartView.swift */; };
+		B1000001000000000000000A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000000A /* Assets.xcassets */; };
+		B1000001000000000000000B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000000B /* Theme.swift */; };
+		B1000001000000000000000C /* MainDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000000C /* MainDestination.swift */; };
+		B1000001000000000000000D /* TaskFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000000D /* TaskFilters.swift */; };
+		B1000001000000000000000E /* UpcomingBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000000E /* UpcomingBoardView.swift */; };
+		B1000001000000000000000F /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000000F /* TaskCardView.swift */; };
+		B10000010000000000000010 /* MainDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000010 /* MainDetailView.swift */; };
+		B10000010000000000000011 /* AddTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000011 /* AddTaskSheet.swift */; };
+		B10000010000000000000012 /* AddTaskComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000012 /* AddTaskComposerView.swift */; };
+		B10000010000000000000013 /* TaskListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000013 /* TaskListRowView.swift */; };
+		B10000010000000000000014 /* DueDateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000014 /* DueDateFormatting.swift */; };
+		B10000010000000000000015 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000015 /* PersistenceController.swift */; };
+		B10000010000000000000016 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000016 /* NotificationScheduler.swift */; };
+		B1000001000000000000003B /* AgendaNotificationPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000003B /* AgendaNotificationPlanner.swift */; };
+		B10000010000000000000017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000017 /* AppDelegate.swift */; };
+		B10000010000000000000018 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000018 /* MenuBarController.swift */; };
+		B10000010000000000000019 /* WidgetDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000019 /* WidgetDataLoader.swift */; };
+		B1000001000000000000001A /* todoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B30000010000000000000002 /* todoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1000001000000000000001B /* TaskHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000001B /* TaskHierarchy.swift */; };
+		B1000001000000000000001C /* TaskEditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000001C /* TaskEditSheet.swift */; };
+		B1000001000000000000001D /* TaskLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000001D /* TaskLink.swift */; };
+		B1000001000000000000001E /* TaskLinkKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000001E /* TaskLinkKind.swift */; };
+		B1000001000000000000001F /* TaskLinkMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000001F /* TaskLinkMigration.swift */; };
+		B10000010000000000000020 /* TaskDependencyEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000020 /* TaskDependencyEditor.swift */; };
+		B10000010000000000000021 /* TaskDependencyDraftEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000021 /* TaskDependencyDraftEditor.swift */; };
+		B10000010000000000000022 /* CategoryEditorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000022 /* CategoryEditorSheet.swift */; };
+		B10000010000000000000023 /* SubtaskDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000023 /* SubtaskDraft.swift */; };
+		B10000010000000000000024 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000024 /* CalendarService.swift */; };
+		B10000010000000000000025 /* CalendarEventPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000025 /* CalendarEventPickerSheet.swift */; };
+		B10000010000000000000026 /* CalendarLinkEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000026 /* CalendarLinkEditor.swift */; };
+		B10000010000000000000038 /* CalendarEventComposerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000038 /* CalendarEventComposerSheet.swift */; };
+		B10000010000000000000039 /* TodayBlockTimeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000039 /* TodayBlockTimeSheet.swift */; };
+		B1000001000000000000003A /* TodayTimeBlockGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000003A /* TodayTimeBlockGridView.swift */; };
+		B10000010000000000000027 /* ScheduleConflict.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000027 /* ScheduleConflict.swift */; };
+		B10000010000000000000028 /* CalendarSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000028 /* CalendarSyncService.swift */; };
+		B10000010000000000000029 /* TaskItem+Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000029 /* TaskItem+Calendar.swift */; };
+		B10000010000000000000030 /* CalendarWeekPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000030 /* CalendarWeekPickerView.swift */; };
+		B10000010000000000000031 /* DurationFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000031 /* DurationFormatting.swift */; };
+		B10000010000000000000032 /* CalendarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000032 /* CalendarColor.swift */; };
+		B10000010000000000000033 /* GanttScheduleMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000033 /* GanttScheduleMath.swift */; };
+		B10000010000000000000034 /* TaskItem+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000034 /* TaskItem+Today.swift */; };
+		B10000010000000000000035 /* GanttHorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000035 /* GanttHorizontalScrollView.swift */; };
+		B10000010000000000000036 /* TaskItem+Gantt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000036 /* TaskItem+Gantt.swift */; };
+		B10000010000000000000037 /* ScheduleDateDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000037 /* ScheduleDateDefaults.swift */; };
+		C10000010000000000000001 /* TodoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000010000000000000001 /* TodoWidgetBundle.swift */; };
+		C10000010000000000000002 /* TodayTasksWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000010000000000000002 /* TodayTasksWidget.swift */; };
+		C10000010000000000000010 /* TodayAgendaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000010000000000000004 /* TodayAgendaWidget.swift */; };
+		C10000010000000000000003 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000002 /* Project.swift */; };
+		C10000010000000000000004 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000003 /* TaskItem.swift */; };
+		C10000010000000000000005 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000015 /* PersistenceController.swift */; };
+		C10000010000000000000006 /* TaskFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000000D /* TaskFilters.swift */; };
+		C10000010000000000000007 /* DueDateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000014 /* DueDateFormatting.swift */; };
+		C10000010000000000000008 /* WidgetDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000019 /* WidgetDataLoader.swift */; };
+		C10000010000000000000009 /* TaskHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000001B /* TaskHierarchy.swift */; };
+		C1000001000000000000000A /* TaskLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000001D /* TaskLink.swift */; };
+		C1000001000000000000000B /* TaskLinkKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001000000000000001E /* TaskLinkKind.swift */; };
+		C1000001000000000000000C /* TaskItem+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000010000000000000034 /* TaskItem+Today.swift */; };
+		G10000010000000000000001 /* ScheduleEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = G20000010000000000000001 /* ScheduleEditorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D10000010000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B90000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B60000010000000000000002;
+			remoteInfo = todoWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B70000010000000000000003 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B1000001000000000000001A /* todoWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B20000010000000000000001 /* todoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoApp.swift; sourceTree = "<group>"; };
+		B20000010000000000000002 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		B20000010000000000000003 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		B20000010000000000000004 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		B20000010000000000000005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B20000010000000000000006 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		B20000010000000000000007 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		B20000010000000000000008 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		B20000010000000000000009 /* GanttChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttChartView.swift; sourceTree = "<group>"; };
+		B2000001000000000000000A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2000001000000000000000B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B2000001000000000000000C /* MainDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDestination.swift; sourceTree = "<group>"; };
+		B2000001000000000000000D /* TaskFilters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFilters.swift; sourceTree = "<group>"; };
+		B2000001000000000000000E /* UpcomingBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingBoardView.swift; sourceTree = "<group>"; };
+		B2000001000000000000000F /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		B20000010000000000000010 /* MainDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailView.swift; sourceTree = "<group>"; };
+		B20000010000000000000011 /* AddTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskSheet.swift; sourceTree = "<group>"; };
+		B20000010000000000000012 /* AddTaskComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskComposerView.swift; sourceTree = "<group>"; };
+		B20000010000000000000013 /* TaskListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListRowView.swift; sourceTree = "<group>"; };
+		B20000010000000000000014 /* DueDateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDateFormatting.swift; sourceTree = "<group>"; };
+		B20000010000000000000015 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		B20000010000000000000016 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		B2000001000000000000003B /* AgendaNotificationPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaNotificationPlanner.swift; sourceTree = "<group>"; };
+		B20000010000000000000017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B20000010000000000000018 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		B20000010000000000000019 /* WidgetDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataLoader.swift; sourceTree = "<group>"; };
+		B2000001000000000000001A /* todo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todo.entitlements; sourceTree = "<group>"; };
+		B2000001000000000000001B /* TaskHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHierarchy.swift; sourceTree = "<group>"; };
+		B2000001000000000000001C /* TaskEditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditSheet.swift; sourceTree = "<group>"; };
+		B2000001000000000000001D /* TaskLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLink.swift; sourceTree = "<group>"; };
+		B2000001000000000000001E /* TaskLinkKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLinkKind.swift; sourceTree = "<group>"; };
+		B2000001000000000000001F /* TaskLinkMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLinkMigration.swift; sourceTree = "<group>"; };
+		B20000010000000000000020 /* TaskDependencyEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDependencyEditor.swift; sourceTree = "<group>"; };
+		B20000010000000000000021 /* TaskDependencyDraftEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDependencyDraftEditor.swift; sourceTree = "<group>"; };
+		B20000010000000000000022 /* CategoryEditorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEditorSheet.swift; sourceTree = "<group>"; };
+		B20000010000000000000023 /* SubtaskDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtaskDraft.swift; sourceTree = "<group>"; };
+		B20000010000000000000024 /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		B20000010000000000000025 /* CalendarEventPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventPickerSheet.swift; sourceTree = "<group>"; };
+		B20000010000000000000026 /* CalendarLinkEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarLinkEditor.swift; sourceTree = "<group>"; };
+		B20000010000000000000038 /* CalendarEventComposerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventComposerSheet.swift; sourceTree = "<group>"; };
+		B20000010000000000000039 /* TodayBlockTimeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayBlockTimeSheet.swift; sourceTree = "<group>"; };
+		B2000001000000000000003A /* TodayTimeBlockGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTimeBlockGridView.swift; sourceTree = "<group>"; };
+		B20000010000000000000027 /* ScheduleConflict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleConflict.swift; sourceTree = "<group>"; };
+		B20000010000000000000028 /* CalendarSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSyncService.swift; sourceTree = "<group>"; };
+		B20000010000000000000029 /* TaskItem+Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskItem+Calendar.swift"; sourceTree = "<group>"; };
+		B20000010000000000000030 /* CalendarWeekPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWeekPickerView.swift; sourceTree = "<group>"; };
+		B20000010000000000000031 /* DurationFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationFormatting.swift; sourceTree = "<group>"; };
+		B20000010000000000000032 /* CalendarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarColor.swift; sourceTree = "<group>"; };
+		B20000010000000000000033 /* GanttScheduleMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttScheduleMath.swift; sourceTree = "<group>"; };
+		B20000010000000000000034 /* TaskItem+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskItem+Today.swift"; sourceTree = "<group>"; };
+		B20000010000000000000035 /* GanttHorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanttHorizontalScrollView.swift; sourceTree = "<group>"; };
+		B20000010000000000000036 /* TaskItem+Gantt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskItem+Gantt.swift"; sourceTree = "<group>"; };
+		B20000010000000000000037 /* ScheduleDateDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDateDefaults.swift; sourceTree = "<group>"; };
+		B30000010000000000000001 /* todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30000010000000000000002 /* todoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = todoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20000010000000000000001 /* TodoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoWidgetBundle.swift; sourceTree = "<group>"; };
+		C20000010000000000000002 /* TodayTasksWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTasksWidget.swift; sourceTree = "<group>"; };
+		C20000010000000000000003 /* todoWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todoWidget.entitlements; sourceTree = "<group>"; };
+		C20000010000000000000004 /* TodayAgendaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayAgendaWidget.swift; sourceTree = "<group>"; };
+		E20000010000000000000001 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		E20000010000000000000002 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
+		E20000010000000000000003 /* Widget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Widget.xcconfig; sourceTree = "<group>"; };
+		G20000010000000000000001 /* ScheduleEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEditorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B40000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B50000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				B50000010000000000000002 /* todo */,
+				C50000010000000000000001 /* todoWidget */,
+				E50000010000000000000001 /* Config */,
+				B50000010000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B50000010000000000000002 /* todo */ = {
+			isa = PBXGroup;
+			children = (
+				B20000010000000000000001 /* todoApp.swift */,
+				B20000010000000000000017 /* AppDelegate.swift */,
+				B2000001000000000000001A /* todo.entitlements */,
+				B50000010000000000000009 /* MenuBar */,
+				B50000010000000000000008 /* Design */,
+				B50000010000000000000004 /* Models */,
+				B50000010000000000000005 /* Services */,
+				B50000010000000000000006 /* Views */,
+				B50000010000000000000007 /* Gantt */,
+				B2000001000000000000000A /* Assets.xcassets */,
+			);
+			path = todo;
+			sourceTree = "<group>";
+		};
+		B50000010000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B30000010000000000000001 /* todo.app */,
+				B30000010000000000000002 /* todoWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B50000010000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B20000010000000000000002 /* Project.swift */,
+				B20000010000000000000003 /* TaskItem.swift */,
+				B20000010000000000000029 /* TaskItem+Calendar.swift */,
+				B20000010000000000000034 /* TaskItem+Today.swift */,
+				B20000010000000000000036 /* TaskItem+Gantt.swift */,
+				B2000001000000000000001D /* TaskLink.swift */,
+				B2000001000000000000001E /* TaskLinkKind.swift */,
+				B2000001000000000000000C /* MainDestination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B50000010000000000000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B20000010000000000000004 /* Scheduler.swift */,
+				B20000010000000000000033 /* GanttScheduleMath.swift */,
+				B2000001000000000000000D /* TaskFilters.swift */,
+				B20000010000000000000014 /* DueDateFormatting.swift */,
+				B20000010000000000000015 /* PersistenceController.swift */,
+				B20000010000000000000016 /* NotificationScheduler.swift */,
+				B2000001000000000000003B /* AgendaNotificationPlanner.swift */,
+				B20000010000000000000019 /* WidgetDataLoader.swift */,
+				B2000001000000000000001B /* TaskHierarchy.swift */,
+				B2000001000000000000001F /* TaskLinkMigration.swift */,
+				B20000010000000000000024 /* CalendarService.swift */,
+				B20000010000000000000027 /* ScheduleConflict.swift */,
+				B20000010000000000000037 /* ScheduleDateDefaults.swift */,
+				B20000010000000000000031 /* DurationFormatting.swift */,
+				B20000010000000000000032 /* CalendarColor.swift */,
+				B20000010000000000000028 /* CalendarSyncService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B50000010000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B20000010000000000000005 /* ContentView.swift */,
+				B20000010000000000000006 /* SidebarView.swift */,
+				B20000010000000000000010 /* MainDetailView.swift */,
+				B2000001000000000000000E /* UpcomingBoardView.swift */,
+				B2000001000000000000000F /* TaskCardView.swift */,
+				B20000010000000000000011 /* AddTaskSheet.swift */,
+				B20000010000000000000012 /* AddTaskComposerView.swift */,
+				G20000010000000000000001 /* ScheduleEditorView.swift */,
+				B20000010000000000000013 /* TaskListRowView.swift */,
+				B2000001000000000000001C /* TaskEditSheet.swift */,
+				B20000010000000000000020 /* TaskDependencyEditor.swift */,
+				B20000010000000000000021 /* TaskDependencyDraftEditor.swift */,
+				B20000010000000000000022 /* CategoryEditorSheet.swift */,
+				B20000010000000000000023 /* SubtaskDraft.swift */,
+				B20000010000000000000025 /* CalendarEventPickerSheet.swift */,
+				B20000010000000000000030 /* CalendarWeekPickerView.swift */,
+				B20000010000000000000026 /* CalendarLinkEditor.swift */,
+				B20000010000000000000038 /* CalendarEventComposerSheet.swift */,
+				B20000010000000000000039 /* TodayBlockTimeSheet.swift */,
+				B2000001000000000000003A /* TodayTimeBlockGridView.swift */,
+				B20000010000000000000007 /* TaskListView.swift */,
+				B20000010000000000000008 /* TaskRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B50000010000000000000007 /* Gantt */ = {
+			isa = PBXGroup;
+			children = (
+				B20000010000000000000009 /* GanttChartView.swift */,
+				B20000010000000000000035 /* GanttHorizontalScrollView.swift */,
+			);
+			path = Gantt;
+			sourceTree = "<group>";
+		};
+		B50000010000000000000008 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				B2000001000000000000000B /* Theme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		B50000010000000000000009 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				B20000010000000000000018 /* MenuBarController.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		C50000010000000000000001 /* todoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C20000010000000000000001 /* TodoWidgetBundle.swift */,
+				C20000010000000000000002 /* TodayTasksWidget.swift */,
+				C20000010000000000000004 /* TodayAgendaWidget.swift */,
+				C20000010000000000000003 /* todoWidget.entitlements */,
+			);
+			path = todoWidget;
+			sourceTree = "<group>";
+		};
+		E50000010000000000000001 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E20000010000000000000001 /* Signing.xcconfig */,
+				E20000010000000000000002 /* App.xcconfig */,
+				E20000010000000000000003 /* Widget.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B60000010000000000000001 /* todo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80000010000000000000003 /* Build configuration list for PBXNativeTarget "todo" */;
+			buildPhases = (
+				B70000010000000000000001 /* Sources */,
+				B40000010000000000000001 /* Frameworks */,
+				B70000010000000000000002 /* Resources */,
+				B70000010000000000000003 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20000010000000000000001 /* PBXTargetDependency */,
+			);
+			name = todo;
+			productName = todo;
+			productReference = B30000010000000000000001 /* todo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B60000010000000000000002 /* todoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C80000010000000000000001 /* Build configuration list for PBXNativeTarget "todoWidgetExtension" */;
+			buildPhases = (
+				C70000010000000000000001 /* Sources */,
+				C40000010000000000000001 /* Frameworks */,
+				C70000010000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = todoWidgetExtension;
+			productName = todoWidgetExtension;
+			productReference = B30000010000000000000002 /* todoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B90000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B60000010000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+						DevelopmentTeam = 284U7YFX89;
+						ProvisioningStyle = Automatic;
+					};
+					B60000010000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+						DevelopmentTeam = 284U7YFX89;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B80000010000000000000001 /* Build configuration list for PBXProject "todo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B50000010000000000000001;
+			productRefGroup = B50000010000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B60000010000000000000001 /* todo */,
+				B60000010000000000000002 /* todoWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B70000010000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000001000000000000000A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70000010000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B70000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000010000000000000001 /* todoApp.swift in Sources */,
+				B10000010000000000000002 /* Project.swift in Sources */,
+				B10000010000000000000003 /* TaskItem.swift in Sources */,
+				B10000010000000000000004 /* Scheduler.swift in Sources */,
+				B10000010000000000000033 /* GanttScheduleMath.swift in Sources */,
+				B10000010000000000000005 /* ContentView.swift in Sources */,
+				B10000010000000000000006 /* SidebarView.swift in Sources */,
+				B10000010000000000000007 /* TaskListView.swift in Sources */,
+				B10000010000000000000008 /* TaskRowView.swift in Sources */,
+				B10000010000000000000009 /* GanttChartView.swift in Sources */,
+				B10000010000000000000035 /* GanttHorizontalScrollView.swift in Sources */,
+				B1000001000000000000000B /* Theme.swift in Sources */,
+				B1000001000000000000000C /* MainDestination.swift in Sources */,
+				B1000001000000000000000D /* TaskFilters.swift in Sources */,
+				B1000001000000000000000E /* UpcomingBoardView.swift in Sources */,
+				B1000001000000000000000F /* TaskCardView.swift in Sources */,
+				B10000010000000000000010 /* MainDetailView.swift in Sources */,
+				B10000010000000000000011 /* AddTaskSheet.swift in Sources */,
+				B10000010000000000000012 /* AddTaskComposerView.swift in Sources */,
+				G10000010000000000000001 /* ScheduleEditorView.swift in Sources */,
+				B10000010000000000000013 /* TaskListRowView.swift in Sources */,
+				B10000010000000000000014 /* DueDateFormatting.swift in Sources */,
+				B10000010000000000000015 /* PersistenceController.swift in Sources */,
+				B10000010000000000000016 /* NotificationScheduler.swift in Sources */,
+				B1000001000000000000003B /* AgendaNotificationPlanner.swift in Sources */,
+				B10000010000000000000017 /* AppDelegate.swift in Sources */,
+				B10000010000000000000018 /* MenuBarController.swift in Sources */,
+				B10000010000000000000019 /* WidgetDataLoader.swift in Sources */,
+				B1000001000000000000001B /* TaskHierarchy.swift in Sources */,
+				B1000001000000000000001C /* TaskEditSheet.swift in Sources */,
+				B1000001000000000000001D /* TaskLink.swift in Sources */,
+				B1000001000000000000001E /* TaskLinkKind.swift in Sources */,
+				B1000001000000000000001F /* TaskLinkMigration.swift in Sources */,
+				B10000010000000000000020 /* TaskDependencyEditor.swift in Sources */,
+				B10000010000000000000021 /* TaskDependencyDraftEditor.swift in Sources */,
+				B10000010000000000000022 /* CategoryEditorSheet.swift in Sources */,
+				B10000010000000000000023 /* SubtaskDraft.swift in Sources */,
+				B10000010000000000000024 /* CalendarService.swift in Sources */,
+				B10000010000000000000025 /* CalendarEventPickerSheet.swift in Sources */,
+				B10000010000000000000026 /* CalendarLinkEditor.swift in Sources */,
+				B10000010000000000000038 /* CalendarEventComposerSheet.swift in Sources */,
+				B10000010000000000000039 /* TodayBlockTimeSheet.swift in Sources */,
+				B1000001000000000000003A /* TodayTimeBlockGridView.swift in Sources */,
+				B10000010000000000000027 /* ScheduleConflict.swift in Sources */,
+				B10000010000000000000037 /* ScheduleDateDefaults.swift in Sources */,
+				B10000010000000000000028 /* CalendarSyncService.swift in Sources */,
+				B10000010000000000000029 /* TaskItem+Calendar.swift in Sources */,
+				B10000010000000000000034 /* TaskItem+Today.swift in Sources */,
+				B10000010000000000000036 /* TaskItem+Gantt.swift in Sources */,
+				B10000010000000000000030 /* CalendarWeekPickerView.swift in Sources */,
+				B10000010000000000000031 /* DurationFormatting.swift in Sources */,
+				B10000010000000000000032 /* CalendarColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10000010000000000000001 /* TodoWidgetBundle.swift in Sources */,
+				C10000010000000000000002 /* TodayTasksWidget.swift in Sources */,
+				C10000010000000000000010 /* TodayAgendaWidget.swift in Sources */,
+				C10000010000000000000003 /* Project.swift in Sources */,
+				C10000010000000000000004 /* TaskItem.swift in Sources */,
+				C10000010000000000000005 /* PersistenceController.swift in Sources */,
+				C10000010000000000000006 /* TaskFilters.swift in Sources */,
+				C10000010000000000000007 /* DueDateFormatting.swift in Sources */,
+				C10000010000000000000008 /* WidgetDataLoader.swift in Sources */,
+				C1000001000000000000000C /* TaskItem+Today.swift in Sources */,
+				C10000010000000000000009 /* TaskHierarchy.swift in Sources */,
+				C1000001000000000000000A /* TaskLink.swift in Sources */,
+				C1000001000000000000000B /* TaskLinkKind.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D20000010000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B60000010000000000000002 /* todoWidgetExtension */;
+			targetProxy = D10000010000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BA0000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20000010000000000000001 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 284U7YFX89;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA0000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20000010000000000000001 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 284U7YFX89;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BA0000010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20000010000000000000002 /* App.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = todo/todo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 284U7YFX89;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = todo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Create and link Calendar events for your tasks, including notes and scheduled work time.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "Show reminders when your tasks are due.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divitrawal.todo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BA0000010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20000010000000000000002 /* App.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = todo/todo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 284U7YFX89;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = todo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Create and link Calendar events for your tasks, including notes and scheduled work time.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "Show reminders when your tasks are due.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divitrawal.todo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CA0000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20000010000000000000003 /* Widget.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = todoWidget/todoWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 284U7YFX89;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = todo;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divitrawal.todo.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CA0000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20000010000000000000003 /* Widget.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = todoWidget/todoWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 284U7YFX89;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = todo;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divitrawal.todo.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B80000010000000000000001 /* Build configuration list for PBXProject "todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0000010000000000000001 /* Debug */,
+				BA0000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B80000010000000000000003 /* Build configuration list for PBXNativeTarget "todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0000010000000000000003 /* Debug */,
+				BA0000010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C80000010000000000000001 /* Build configuration list for PBXNativeTarget "todoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0000010000000000000001 /* Debug */,
+				CA0000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B90000010000000000000001 /* Project object */;
+}
